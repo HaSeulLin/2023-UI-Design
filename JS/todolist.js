@@ -54,15 +54,15 @@ function todoCheck(event) {
     const li = event.target.parentNode;
     const span = li.children[1];
     if (event.target.checked){
-        li.style.color = "rgba(255,255,255,0.3)";
+        span.style.color = "rgba(255,255,255,0.3)";
         span.style.textDecoration = "line-through";
-        li.style.fontStyle = "italic";
+        span.style.fontStyle = "italic";
         listChecked+=1;
     }
     else {
-        li.style.color = "";
+        span.style.color = "";
         span.style.textDecoration = "none"
-        li.style.fontStyle = "normal";
+        span.style.fontStyle = "normal";
         listChecked-=1;
     }
     return state.innerHTML = `전체 할일 ${listAll} | 완료한 할일 ${listChecked}`;
