@@ -1,0 +1,120 @@
+/* 폰트 */
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 태그 디자인*/
+body {
+    background-color: rgba(5, 2, 34, 0.8);
+    color: white;
+    text-align: center;
+    font-family: 'S-CoreDream-3Light';
+}
+h1 {    
+    font-size: 4rem;
+    margin: 50px 0;
+}
+
+/* id 디자인 */
+#clock {
+    font-family: 'KIMM_Bold';
+    text-shadow: 0 0 5px whitesmoke;
+    margin-top: 80px;
+}
+#state {
+    font-size: 20px;
+}
+
+/* todolist 디자인 */
+#todolist {
+    max-width: 400px;
+    margin: auto;
+}
+#todolist li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+#todolist li:nth-child(2n){
+    background-color: rgb(231, 100, 100);
+}
+#todolist input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+#todolist button {
+    transition: all 0.2s;
+    border: 2px transparent solid;
+    cursor: pointer;
+    font-family: 'Pretendard-Regular';
+    text-align: center;
+    color: gray;
+    background-color: transparent;
+}
+/* 버튼 마우스 오버 */
+#todolist button:hover {
+    color: white;
+    transition: all 0.2s;
+}
+
+
+/* input 디자인 */
+input[type="text"], input[type="submit"]{
+    font-family: 'S-CoreDream-3Light';
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 2px white solid;
+    padding: 7px 15px;
+    border-radius: 20px 20px;
+}
+input[type="text"]{
+    color : white;
+    width: 250px;
+    margin-right: 5px;
+}
+input[type="text"]:focus{
+    outline: none;
+    background-color: rgb(231, 100, 100);
+}
+input[type="text"]::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+input[type="submit"]{
+    font-weight: bold;
+}
+input[type="text"]+input[type="submit"]{
+    background-color: white;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+/* 버튼에 마우스를 올렸을 때 */
+input[type="text"]+input[type="submit"]:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.3s;
+}
+
+
+
